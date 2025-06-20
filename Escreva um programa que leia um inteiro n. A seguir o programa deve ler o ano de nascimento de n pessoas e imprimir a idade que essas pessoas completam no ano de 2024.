@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+void idade (int n)
+{
+    int idadeatual, i, num;
+
+    i=0;
+
+    while(i<n) {
+        cin>>num;
+        idadeatual=2024-num;
+        cout<<"Quem nasceu em "<<num<<" completa "<<idadeatual<<" anos em 2024"<<endl;
+        i++;
+    }
+}
+
+int main(){
+    int n;
+    cin>>n;
+    idade(n);
+    return 0;
+}
