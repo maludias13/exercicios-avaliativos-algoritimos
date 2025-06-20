@@ -1,0 +1,31 @@
+
+#include <iostream>
+using namespace std;
+void idade (int n){
+    int i, num;
+    i=0;
+    while(i<n){
+        cin>> num;
+        if(num<18){
+            cout<<"Criança ou adolescente"<<endl;
+        }else{
+            if(num>=65){
+                cout<<"Idoso"<<endl;
+            }else{
+                cout<<"Adulto"<<endl;
+            }
+        }
+        i++;
+    }
+}
+
+int main()
+{
+    int n;
+    
+    cin>>n;
+    
+    idade (n);
+
+    return 0;
+}
